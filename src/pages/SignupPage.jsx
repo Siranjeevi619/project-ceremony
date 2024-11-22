@@ -5,13 +5,13 @@ import Button from '../tools/Button';
 const SignupPage = () => {
   return (
 
-    <div className="container-fluid main-container ">
+    <div className="container-fluid main-container pb-3">
        <div className="row  pt-md-5  justify-content-center  ">
             <div className="col-7  col-md-12 ps-md-5 ps-0 ms-md-5 codes-s mt-5 mt-md-0" style={{ color:  "#0288D1" }}>
             ✦Splendid Space
             </div>
         </div>
-    <div className="row pb-5">
+    <div className="row ">
       
       <div className="col-md-10 d-none d-md-block left-section">
        
@@ -55,7 +55,7 @@ const SignupPage = () => {
 
             {/* <button type="submit" className="btn btn-primary btn-block">Signup</button> */}
             <div className='row  mt-1 justify-content-center'> 
-              <div className="col-1">OR</div></div>   </form>
+              <div className="col-3">OR</div></div>   </form>
           
           <div className="s mt-1">
             <div className="row justify-content-center">
