@@ -1,0 +1,69 @@
+.theme-toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-toggle .icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.theme-toggle .sun {
+  background-color: #ffd700; /* Sun color */
+  box-shadow: 0 0 10px 2px #ffd700;
+  transform: rotate(0deg);
+}
+
+.theme-toggle .moon {
+  background-color: #1e1e1e; /* Moon color */
+  box-shadow: 0 0 5px 2px #ffffff;
+  transform: rotate(180deg);
+}
+
+.theme-toggle .icon::before,
+.theme-toggle .icon::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle .sun::before,
+.theme-toggle .moon::before {
+  width: 6px;
+  height: 6px;
+  background-color: #ffd700;
+  opacity: 1;
+}
+
+.theme-toggle .sun::after {
+  width: 6px;
+  height: 6px;
+  background-color: #1e1e1e;
+  opacity: 0;
+}
+
+.theme-toggle .moon::before {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+.theme-toggle .moon::after {
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  opacity: 0.5;
+  transform: translate(10px, -10px);
+}
